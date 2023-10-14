@@ -16,7 +16,13 @@ Please refer to the classroom page for further information.
 notebooks, meant to be used with Python 3.8.*. To install all of them
 with pip in a single command (linux/macos) run:
 
-`pip install -r requirements.txt`
+```bash
+pip install -r requirements.txt
+```
+Or, locate/switch where the python.exe is located first.
+```bash
+myenv\Scripts\python.exe -m pip install -r requirements.txt
+```
 
 ### Differences with previous years
 
