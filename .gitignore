@@ -1,3 +1,5 @@
 venv/
 myenv/
 .vscode/
+./Gridworld.ipynb
+./Value_iteration.ipynb
