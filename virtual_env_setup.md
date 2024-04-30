@@ -23,6 +23,12 @@ python -m venv myenv
 
 Replace `myenv` with the desired name for your virtual environment. This command will create a new directory with the chosen name, containing a fresh Python environment.
 
+To use a specific python version, in this case version `3.8` to create a virtual environment named `a3c3_38_32`:
+
+```bash
+C:\Users\yusup\AppData\Local\Programs\Python\Python38-32\python.exe -m venv a3c3_38_32
+```
+
 ## Activating a Virtual Environment
 
 Before using your virtual environment, you need to activate it. Use the appropriate command based on your operating system:
@@ -61,6 +67,12 @@ pip install library-name
 
 Replace `library-name` with the desired library. Libraries installed in this manner are isolated to your virtual environment.
 
+To install all the libraries in a requirements.txt file, use the following command
+
+```bash
+pip install -r requirements.txt
+```
+
 ## Uninstalling Libraries
 
 To uninstall a library from your virtual environment, use the following command:
@@ -86,3 +98,21 @@ Replace `library-name` with the library you want to uninstall.
 
 - If you forget to deactivate your virtual environment and close the terminal, simply reactivate the environment using the activation command.
 - If you encounter library conflicts or issues, create a new virtual environment for your project.
+
+## Check versions
+
+To check all the installed library versions, run the following command
+
+```bash
+python -m pip freeze
+```
+
+## Copy versions into a requiremenst.txt file
+
+- `pip freeze`: Lists all installed packages and their versions.
+- `>`: Redirects the output to a file.
+- `requirements.txt`: The file where the package information will be stored.
+
+```bash
+pip freeze > requirements.txt
+```
